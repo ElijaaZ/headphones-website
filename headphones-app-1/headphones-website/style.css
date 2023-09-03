@@ -33,7 +33,6 @@ nav {
 }
 .navbar::before {
     content: "";
-    display: block;
     position: absolute;
     width: 100%;
     height: 50px; 
