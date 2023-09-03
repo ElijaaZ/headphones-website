@@ -105,7 +105,7 @@ nav ul li a:hover {
 button {
     width: 140px;
     border: 0;
-    padding: 12px 10px;
+    padding: 12px;
     outline: none;
     color: black;
     border-radius: 6px;
@@ -153,11 +153,6 @@ button:hover {
     z-index: -1;
     left: 265px;
 }
-hr {
-    position: relative;
-    bottom: 150px;
-    border: solid 2px #E09E9E;
-}
 
 @media only screen and (max-width:667px){
 
@@ -177,9 +172,6 @@ hr {
         left: 200px;
     }
 
-    .button {
-        position: a;
-    }
     .menu{
         position: relative;
         left: 25px;

@@ -1,4 +1,4 @@
-var menuList = document.getElementById("menuList");
+const menuList = document.getElementById("menuList");
 menuList.style.maxHeight="0px";
 
 function togglemenu(){
@@ -10,3 +10,4 @@ function togglemenu(){
         menuList.style.maxHeight = "0px";
     }
 }
+
