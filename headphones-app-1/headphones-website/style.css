@@ -169,10 +169,9 @@ button {
 }
 .specification {
     font-family: 'Poppins', sans-serif;
-    text-align: left;
-    position: relative;
+    position: absolute;
+    top: 300px;
     left: 1300px;
-    bottom: 500px;
 }
 
 .specification ul {
