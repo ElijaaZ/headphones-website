@@ -152,28 +152,36 @@ button {
     border-radius: 10px;
 }
 .description {
-    position: relative;
+    text-align: left;
+    position: absolute;
     top: 200px;
     left: 200px;
     font-family: 'Poppins', sans-serif;
 }
 .description h2 {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 .description p {
     font-size: 18px;
     border: 0px solid;
     width: 400px;
-    position: absolute;
-    left: 0;
+    margin-bottom: 30px;
+}
+.description h4 {
+    display: inline-block;
+    font-size: 28px;
+    margin-right: 90px;
+}
+.description button {
+    margin-left: 90px;
 }
 .specification {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 1300px;
 }
-
 .specification ul {
     list-style: none;
 }
@@ -202,11 +210,11 @@ button {
         flex-direction: column-reverse;
         margin: 50px 0;
     }
-    .col-2{
+    .product{
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-    .col-2 .headphones {
+    .product .headphones {
         width: 50%;
         position: relative;
         left: 200px;
