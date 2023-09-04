@@ -6,8 +6,7 @@
 }
 .container {
     width: 100%;
-    min-height: 100vh;
-    padding-right: 8%;
+    padding-right: 7%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -17,11 +16,8 @@
     align-items: center;
 }
 .logo{
-    cursor: pointer;
     margin: 10px;
     font-family: 'Poppins', sans-serif;
-}
-.bold {
     font-weight: bold;
 }
 .thin {
@@ -38,7 +34,6 @@ nav {
     height: 50px; 
     background: linear-gradient(to right, #E09E9E, #424774);
     top: 0;
-    left: 0;
     z-index: -1;
 }
 nav ul li {
@@ -54,7 +49,6 @@ nav ul li a {
     color: black;
     font-size: 18px; 
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 nav ul li a:hover {
     color: #E09E9E;
@@ -79,66 +73,48 @@ nav ul li a:hover {
     align-items: center;
     margin: 100px 0;
 }
-.col-1 {
+.text {
     flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-    left: 200px;
-    bottom: 200px;
+    margin-left: 200px;
+    margin-bottom: 250px;
 }
-.col-1 h1 {
+.text h1 {
     font-size: 82px;
     font-family: 'Lato', sans-serif;
 }
-.col-1 h3 {
+.text h3 {
     font-size: 40px;
     font-weight: 100;
-    margin: 10px 0 10px;
+    margin: 5px;
     font-family: 'Poppins', sans-serif;
 }
-.col-1 h4 {
-    margin: 10px 0;
+.text h4 {
+    margin: 5px;
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
 }
 button {
-    width: 140px;
-    border: 0;
-    padding: 12px;
-    outline: none;
+    width: 130px;
+    border: none;
+    padding: 10px;
     color: black;
     border-radius: 6px;
     background: linear-gradient(to right, #E09E9E, #da63cc);
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-
 }
-button img {
-    width: 30px;
-    display: none;
-}
-button:hover img {
-    display: block;
-}
-button:hover {
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.col-2 {
+.product {
     position:relative;
     flex-basis: 60%;
     display: flex;
     align-items: center;
 }
-.col-2 .headphones {
+.product.headphones {
     width: 80%;
     position: relative;
     left: 30px;
     bottom: 50px;
-
 }
 
 .color-box {
@@ -153,24 +129,70 @@ button:hover {
     left: 265px;
 }
 
-@media only screen and (max-width:667px){
+/*produkt sida börjar här*/
+.container-2 {
+    width: 100%;
+    padding-right: 7%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.product-2 {
+    text-align: center;
+    margin-top: 40px;
+}
+.product-2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 0 220px 5px 0;
+}
+.product-2 .headphones-2 {
+    width: 30%; 
+    border: 1px solid #424774;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+.description {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+.description h2 {
+    font-size: 40px;
+}
+.description p {
+    font-size: 18px;
+    border: 0px solid;
+    width: 400px;
+    position: absolute;
+    left: 0;
+}
+.specification {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    position: relative;
+    left: 1300px;
+    bottom: 500px;
+}
 
+.specification ul {
+    list-style: none;
+}
+
+@media only screen and (max-width:667px){
     nav ul {
         width: 100%;
-        background: linear-gradient(#424774, #a0a3b9);
+        background: linear-gradient(#E09E9E, #424774);
         position: absolute;
         top: 49px;
         right: 0;
         z-index: 2;
-    
     }
     nav ul li{
         display: block;
         margin-top: 20px;
-        position: relative;
         left: 200px;
     }
-
     .menu{
         position: relative;
         left: 25px;
@@ -185,40 +207,34 @@ button:hover {
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-
     .col-2 .headphones {
         width: 50%;
         position: relative;
         left: 200px;
         top: 0;
     }
-    .col-1 h1 {
-        position: relative;
-        right: 250px;
-        top: 50px;
+    .text{
+        position:relative;
+        right: 120px;
+        bottom: 120px;
+}
+    .text h1 {
         font-size: 40px;
     }
-    .col-1 h3{
+    .text h3{
         font-size: 28px;
-        position: relative;
-        right: 250px;
-        top: 50px;
-        margin-top: 3px;
-        margin-bottom: 3px;
     }
-    .col-1 h4{
+    .text h4{
         font-size: 18px;
-        position: relative;
-        right: 250px;
-        top: 40px;
-    }
-    button{
-        position: relative;
-        right: 250px;
-        top: 40px;
     }
     #menuList{
         overflow: hidden;
         transition: 0.5s;
     }
+    .bag {
+        width: 15px;
+        left: 0;
+        top: 1px;
+        margin-left: 30px;
+    }   
 }

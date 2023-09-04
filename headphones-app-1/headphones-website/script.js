@@ -2,8 +2,7 @@ const menuList = document.getElementById("menuList");
 menuList.style.maxHeight="0px";
 
 function togglemenu(){
-    if (menuList.style.maxHeight == "0px") 
-        {
+    if (menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "200px"
         }
         else {
