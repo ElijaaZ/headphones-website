@@ -37,11 +37,9 @@ nav {
     z-index: -1;
 }
 nav ul li {
-    list-style: none;
     display: inline-block;
     margin-right: 150px;
     position: relative;
-    left: 80px;
     bottom: 15px;
 }
 nav ul li a {
@@ -65,9 +63,8 @@ nav ul li a:hover {
     cursor: pointer;
     position: relative;
     left: 100px;
-    bottom: 3px;
 }
-.row{
+.product-info{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +90,7 @@ nav ul li a:hover {
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
 }
-button {
+.buy-button {
     width: 130px;
     border: none;
     padding: 10px;
@@ -134,7 +131,6 @@ button {
     width: 100%;
     padding-right: 7%;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .product-2 {
     text-align: center;
@@ -150,6 +146,7 @@ button {
     border: 1px solid #424774;
     background-color: #fefefe;
     border-radius: 10px;
+    margin-left: 30px;
 }
 .description {
     text-align: left;
@@ -185,6 +182,82 @@ button {
 .specification ul {
     list-style: none;
 }
+/* varukorg sida börjar här */
+.container-3 {
+    width: 100%;
+    padding-right: 7%;
+    box-sizing: border-box;
+}
+.cart {
+    display: flex;
+    padding: 5px;
+    width: 55%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 200px;
+}
+.cart-item, .cart-price, .cart-quantity, .cart-total {
+    flex: 2;
+    text-align: left;
+    padding: 10px;
+    margin-left: 60px;
+}
+.cart-container {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 200px;
+    padding: 5px;
+    width: 55%;
+    font-family: 'Poppins', sans-serif;
+}
+.cart-container h4 {
+    margin: 40px 100px 40px 90px;
+    padding: 10px;
+    white-space: nowrap;
+}
+.headphones-3 {
+    width: 10%;
+    margin: 10px;
+    padding-right: 100px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.quantity {
+    display: flex;
+    font-size: 26px;
+    padding: 50px 70px 0 70px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.quantity h6 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.quantity-button {
+    height: 25px;
+    width: 25px;
+}
+.checkout-buttons {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    margin-left: 830px;
+    margin-top: 10px;
+}
+.continue {
+    width: 200px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+.checkout {
+    width: 150px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #424774;
+    color: #fff;
+    border-radius: 10px;
+}
 
 @media only screen and (max-width:667px){
     nav ul {
@@ -201,12 +274,12 @@ button {
         left: 200px;
     }
     .menu{
-        position: relative;
-        left: 25px;
+        position: absolute;
+        left: 290px;
         display: block;
         cursor: pointer; 
     }
-    .row{
+    .product-info{
         flex-direction: column-reverse;
         margin: 50px 0;
     }
@@ -244,4 +317,42 @@ button {
         top: 1px;
         margin-left: 30px;
     }   
+
+
+
+
+
+    .check-out {
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .text-box {
+        gap: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .text-box ul{
+        list-style: none;
+    }
+    .text-box ul li {
+        display: flex;
+        align-items: center;
+        margin: 25px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .text-box ul li label {
+        width: 150px; 
+        font-family: 'Poppins', sans-serif;
+    }
+    .text-box ul li input {
+        width: 60%;
+        padding: 5px;
+    }
+    .payment {
+        text-align: center;
+    }
+    .payment button {
+        margin: 10px;
+        width: 120px;
+        height: 25px;
+    }
 }

@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-3">
+        <div class="navbar">
+            <h2 class="logo">Elias <span class="thin">Headphones</span></h2>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </nav>
+            <img src="images/menuicon.png" class="menu" onclick="togglemenu()">
+            <a href="cart.html">
+                <img src="images/bag.png" class="bag">
+            </a>
+        </div>
 
+        <div class="cart">
+            <div class="cart-item">Item</div>
+            <div class="cart-price">Price</div>
+            <div class="cart-quantity">Quantity</div>
+            <div class="cart-total">Total</div>
+        </div>
+        <div class="cart-container">
+            <img src="images/headphonespng.png" class="headphones-3">
+            <h4 id="item-price">999 kr</h4>
+            <div class="quantity">
+                <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
+            </div>
+            <h4 id="total-price">999 kr</h4>
+        </div>
+
+        <div class="checkout-buttons">
+            <a href="product.html">
+                <button class="continue">CONTINUE SHOPPING</button>
+            </a>
+            <a href="checkout.html">
+                <button class="checkout">CHECKOUT</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
