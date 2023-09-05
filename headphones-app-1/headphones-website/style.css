@@ -301,6 +301,10 @@ nav ul li a:hover {
         margin-left: 30px;
     }   
 /* Produkt sida börjar här */
+    .info-container {
+        margin-left: 200px;
+    }
+
     .headphones-2 {
         width: 60%;
         margin: 60px 15px 20px 0;
