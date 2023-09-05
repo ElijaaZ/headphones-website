@@ -8,6 +8,7 @@
     width: 100%;
     padding-right: 7%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .navbar {
     width: 100%;
@@ -123,6 +124,7 @@ nav ul li a:hover {
     width: 100%;
     padding-right: 7%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .product-2 {
     text-align: center;
@@ -169,6 +171,7 @@ nav ul li a:hover {
     width: 100%;
     padding-right: 7%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .cart {
     display: flex;
