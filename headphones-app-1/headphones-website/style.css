@@ -342,21 +342,19 @@ nav ul li a:hover {
     }
     .information {
         gap: 10px;
-    }
-    .information ul{
-        list-style: none;
-    }
-    .information ul li {
         display: flex;
-        align-items: center;
-        margin: 25px;
+        flex-direction: column;
+        margin: 10px 0 10px 55px;
     }
-    .information ul li label {
-        width: 150px; 
-    }
-    .information ul li input {
-        width: 60%;
+    .information ::placeholder {
+        font-size: 16px;
         padding: 5px;
+    }
+    .information input{
+        font-size: 20px;
+        width: 260px;
+        height: 40px;
+        border: 2px solid #000;
     }
     .payment {
         text-align: center;
@@ -364,6 +362,6 @@ nav ul li a:hover {
     .payment button {
         margin: 10px;
         width: 120px;
-        height: 25px;
+        height: 30px;
     }
 }
