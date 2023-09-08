@@ -110,13 +110,13 @@ nav ul li a:hover {
 
 .color-box {
     position: absolute;
-    top: 0;
+    top: 20%;
     background: linear-gradient(#424774, #a0a3b9);
     border-radius: 20px 0 0 20px;
-    height: 80%;
-    width: 90%;
+    height: 70%;
+    width: 50%;
     z-index: -1;
-    left: 265px;
+    right: 0;
 }
 
 /*produkt sida börjar här*/
