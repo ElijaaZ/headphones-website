@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-3">
+    <header>
         <div class="navbar">
             <h2 class="logo">Elias <span class="thin">Headphones</span></h2>
             <nav>
@@ -19,26 +19,35 @@
                     <li><a href="">Support</a></li>
                 </ul>
             </nav>
-            <img src="images/menuicon.png" class="menu" onclick="togglemenu()">
-            <a href="cart.html">
-                <img src="images/bag.png" class="bag">
-            </a>
-        </div>
-
-        <div class="cart">
-            <div class="cart-item">Item</div>
-            <div class="cart-price">Price</div>
-            <div class="cart-quantity">Quantity</div>
-            <div class="cart-total">Total</div>
-        </div>
-        <div class="cart-container">
-            <img src="images/headphonespng.png" class="headphones-3">
-            <h4 id="item-price">999 kr</h4>
-            <div class="quantity">
-                <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
+            <div class="icons">
+                <img src="images/menuicon.png" class="menu" onclick="togglemenu()">
+                <a href="cart.html">
+                    <img src="images/bag.png" class="bag">
+                </a>
             </div>
-            <h4 id="total-price">999 kr</h4>
         </div>
+    </header>
+
+    <table border="2" class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td class="item"><img src="images/headphonespng.png" class="item-img"></td>
+            <td id="item-price">999 kr</td>
+            <td class="quantity">
+                <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
+            </td>
+            <td id="total-price">999kr</td>
+        </tr>
+    </tbody>
+    </table>
 
         <div class="checkout-buttons">
             <a href="product.html">
@@ -48,7 +57,6 @@
                 <button class="checkout">CHECKOUT</button>
             </a>
         </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
