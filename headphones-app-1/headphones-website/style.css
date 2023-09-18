@@ -215,86 +215,74 @@ td {
     .logo {
         margin-top: 5px;
         font-size: 26px;
-        
-    }
-    .navbar:before {
-        width: 100%;
     }
     .icons {
+        margin-top: 10px;
     }
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-    .menu {
-        display: show;
+    .bag {
+        width: 23px;
     }
     nav ul {
         background: linear-gradient(to right,#E09E9E, #424774);
         position: absolute;
         top: 50px;
         z-index: 2;
+        right: 0;
     }
-
-   /* 
-    nav ul li{
-        display: block;
-        margin-top: 20px;
-        left: 200px;
+    .product-text h1 {
+        font-size: 30px;
     }
-    .product-info{
-        flex-direction: column-reverse;
-        margin-top: 50px;
-    }
-    .text h1 {
-        font-size: 40px;
-    }
-    .text h3{
-        font-size: 28px;
-    }
-    .text h4{
+    .product-text h3 {
         font-size: 18px;
+        white-space: nowrap;
+    }
+    .product-text h4 {
+        font-size: 22px;
+    }
+    .product-text{
+        margin: 35px;
+        margin-top: 200px;
+    }
+    .menu {
+        display: block;
+        width: 45px;
     }
     #menuList{
         overflow: hidden;
         transition: 0.5s;
+        margin-top: 25px;
+        line-height: 45px;
     }
-    .bag {
-        width: 15px;
-        left: 0;
-        top: 1px;
-        margin-left: 30px;
-    }   */
+    .color-box {
+        height: 40%;
+    }
+    .headphones {
+        width: 60%;
+        margin-right: -10px;
+        margin-top: -180px;
+    }
+
 /* Produkt sida börjar här */
-    .info-container {
-        margin-left: 200px;
+    .info {
+        width: 80%;
+        margin: 10px 10px 0 10px;
+    }
+    .eh {
+        font-size: 32px;
+    }
+    .description {
+        font-size: 16px;
     }
     .headphones-2 {
         width: 60%;
-        margin: 60px 15px 20px 0;
-    }
-    .eh {
-        position: absolute;
-        margin: -100px 0 0 -140px;
-        font-size: 26px;
-    }
-    .description p {
-        font-size: 13px;
-        width: 300px;
-        text-align: center;
-        margin: 270px 5px 0 -190px;
+        margin-top: 40px;
     }
     .buy-price {
-        gap: 30px;
-        position: absolute;
-        top: 0;
-        margin: 210px 0 0 -135px;
-        font-size: 18px;
+        display: flex;
+        gap: 60px;
     }
-    .buy-price .buy-button {
-        width: 120px;
-        height: 40px;
-        font-size: 15px;
+    .buy-price h4 {
+        font-size: 28px;
     }
 /* Checkout sida börjar här */
     .check-out {
