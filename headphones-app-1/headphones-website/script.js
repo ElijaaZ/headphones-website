@@ -55,9 +55,3 @@ for (let i = 0; i < removeCartItems.length; i++) {
 }
 
 // För att lägga till item i varukorgen
-
-let cart = [];
-
-function addToCart() {
-    
-}

@@ -73,7 +73,7 @@ nav {
 }
 .product-text {
     width: 30%;
-    margin: 200px 50px 0 350px;
+    margin: 200px 50px 0 300px;
 }
 .product-text h1 {
     font-size: 82px;
@@ -127,7 +127,7 @@ nav {
         display: grid;
         place-items: center;
     }
-    .headphones-2 {
+    .product-img {
         border: 1px solid black;
         margin-top: -400px;
     }
@@ -302,7 +302,7 @@ td img {
     .description {
         font-size: 16px;
     }
-    .headphones-2 {
+    .product-img {
         width: 60%;
         margin-top: 40px;
     }
