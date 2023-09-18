@@ -90,7 +90,8 @@ nav {
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
 }
-.buy-button {
+.buy-button,
+.add-to-cart {
     width: 130px;
     border: none;
     padding: 10px;
@@ -150,50 +151,66 @@ nav {
         margin-top: 20px;
     }
 /* varukorg sida börjar här */
-.table {
+.table-container {
+    margin: 80px auto;
+    font-family: 'Poppins';
+}
+table {
+    width: 70%;
+    margin: 0 auto 0 auto;
     border-collapse: collapse;
-    margin-left: 50px;
-    width: 55%;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
 }
 th {
-    font-size: 20px;
-    padding: 10px;
-}
-tr {
-    height: 40px;
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #CBC3E3;
+    font-weight: bold;
+    font-size: 26px;
 }
 td {
-    padding: 10px;
-    text-align: center;
+    padding: 10px 5px;
 }
-.item-img {
-    width: 100%;
+td input {
+    width: 45px;
+    height: 35px;
+    padding: 5px;
 }
-.item {
-    width: 20%;
-}
-.quantity {
-    display: flex;
-    align-items: center;
+.remove-btn {
+    color: #fff;
+    background: #CBC3E3;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Poppins';
     border: none;
-    font-size: 30px;
-    margin-top: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0 0 5px;
 }
-.quantity-button {
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
+td img {
+    width: 20%;
+    height: 20%;
+    margin-right: 10px;
+}
+.cart-info p {
     font-size: 30px;
+}
+.cart-info small {
+    font-size: 20px;
+}
+.cart-info small,
+#total-price {
+    font-size: 20px;
 }
 .checkout-buttons {
     display: flex;
     gap: 30px;
-    margin: 20px 0 0 880px;
+    justify-content: flex-end;
+    margin-right: 300px;
 }
 .continue {
     cursor: pointer;
@@ -211,7 +228,19 @@ td {
     color: #fff;
     border-radius: 10px;
 }
-
+.quantity {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 30px;
+    margin-top: 100px;
+}
+.quantity-button {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
 @media only screen and (max-width:667px){
     .logo {
         margin-top: 5px;
@@ -262,7 +291,6 @@ td {
         margin-right: -10px;
         margin-top: -180px;
     }
-
 /* Produkt sida börjar här */
     .info {
         width: 80%;
@@ -285,7 +313,6 @@ td {
     .buy-price h4 {
         font-size: 28px;
     }
-
 /* Varukorg sida börjar här */
     .quantity-button {
         width: 25%;
@@ -293,10 +320,6 @@ td {
     .checkout-buttons {
         margin-left: 5px;
     }
-    .table {
-        width: 95%;
-    }
-    
 /* Checkout sida börjar här */
     .check-out {
         font-family: 'Poppins', sans-serif;

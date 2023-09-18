@@ -42,3 +42,22 @@ increment.addEventListener("click", function() {
 });
 
 updateQuantity();
+
+// För att ta bort item från varukorgen
+
+const removeCartItems = document.getElementsByClassName('remove-btn')
+for (let i = 0; i < removeCartItems.length; i++) {
+    let button = removeCartItems[i];
+    button.addEventListener('click', function(event) {
+        let buttonClicked = event.target
+        buttonClicked.parentElement.parentElement.remove();
+    })
+}
+
+// För att lägga till item i varukorgen
+
+let cart = [];
+
+function addToCart() {
+    
+}

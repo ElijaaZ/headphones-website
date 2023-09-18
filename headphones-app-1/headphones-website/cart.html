@@ -28,35 +28,49 @@
         </div>
     </header>
 
-    <table border="2" class="table">
+    <div class="table-container">
+
+    <table class="table">
         <thead>
             <tr>
                 <th>Item</th>
-                <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
+                <th>Remove</th>
             </tr>
         </thead>
-    <tbody>
-        <tr>
-            <td class="item"><img src="images/headphonespng.png" class="item-img"></td>
-            <td id="item-price">999 kr</td>
-            <td class="quantity">
-                <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
-            </td>
-            <td id="total-price">999kr</td>
-        </tr>
-    </tbody>
+    <!--
+        <tbody>
+            <tr class="cart-items">
+                <td>
+                <div class="cart-info">
+                
+                        <img src="images/headphonespng.png">
+                        <div>
+                            <p>Elias Headphones</p>
+                            <small id="item-price">Price: 999 kr</small>
+                        </div>
+                    </div>
+                </td>
+                <td class="quantity">
+                    <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
+                </td>
+                <td id="total-price">999 kr</td>
+                <td><button class="remove-btn">Remove</button></td>
+            </tr>
+        </tbody>
+-->
     </table>
+    </div>
 
-        <div class="checkout-buttons">
-            <a href="product.html">
-                <button class="continue">CONTINUE SHOPPING</button>
-            </a>
-            <a href="checkout.html">
-                <button class="checkout">CHECKOUT</button>
-            </a>
-        </div>
+    <div class="checkout-buttons">
+        <a href="product.html">
+            <button class="continue">CONTINUE SHOPPING</button>
+        </a>
+        <a href="checkout.html">
+            <button class="checkout">CHECKOUT</button>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
