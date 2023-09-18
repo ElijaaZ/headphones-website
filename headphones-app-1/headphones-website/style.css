@@ -293,6 +293,9 @@ td {
     .checkout-buttons {
         margin-left: 5px;
     }
+    .table {
+        width: 95%;
+    }
     
 /* Checkout sida börjar här */
     .check-out {
