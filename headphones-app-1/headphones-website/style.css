@@ -175,7 +175,7 @@ td {
     width: 100%;
 }
 .item {
-    width: 20%
+    width: 20%;
 }
 .quantity {
     display: flex;
@@ -211,6 +211,7 @@ td {
     color: #fff;
     border-radius: 10px;
 }
+
 @media only screen and (max-width:667px){
     .logo {
         margin-top: 5px;
@@ -284,6 +285,15 @@ td {
     .buy-price h4 {
         font-size: 28px;
     }
+
+/* Varukorg sida börjar här */
+    .quantity-button {
+        width: 25%;
+    }
+    .checkout-buttons {
+        margin-left: 5px;
+    }
+    
 /* Checkout sida börjar här */
     .check-out {
         font-family: 'Poppins', sans-serif;
