@@ -13,12 +13,11 @@ const products = [
 // ====================FÖR ATT LÄGGA TILL PRODUKTEN I VARUKORGEN======================
 
 const cartList = [];
-const cartContentEl = document.querySelector(".cart-content");
+const cartCont = document.querySelector(".cart-content");
 
 function addToCart(id) {
     const product = products.find((product) => product.id === id);
 
-    
         cartList.push(product);
 
         const cartItem = document.createElement('div');
@@ -36,15 +35,17 @@ function addToCart(id) {
             </div>
         `;
 
-        cartContentEl.appendChild(cartItem);
+        cartCont.appendChild(cartItem);
 
-        const totalPriceEl = document.querySelector(".total-price");
-        totalPriceEl.textContent = "999 kr";
+        // När produkten läggs till i varukorgen ändras total summan från 0kr till 999 kr.
+
+        const total = document.querySelector(".total-price");
+        total.textContent = "999 kr";
 
 // ====================ÖKA OCH MINSKA ANTALET AV PRODUKTEN SAMT TOTAL PRIS======================
         const decrement = cartItem.querySelector("#decrement");
         const increment = cartItem.querySelector("#increment");
-        const quantityNum = cartItem.querySelector("#quantity"); // Uppdatera id här
+        const quantityNum = cartItem.querySelector("#quantity");
         const totalPrice = document.querySelector(".total-price");
 
         let quantity = 1;
@@ -83,7 +84,6 @@ function togglemenu(){
 
 // ====================ÖPPNA OCH STÄNGA VARUKORGEN======================
 
-document.addEventListener("DOMContentLoaded", function() {
     const cartIcon = document.querySelector('.cart-icon');
     const closeCartBtn = document.querySelector('.closecart');
     const cart = document.querySelector('.cart');
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     cartIcon.addEventListener("click", openCart);
     closeCartBtn.addEventListener('click', closeCart); 
-});
+;
 
 // ====================TA BORT PRODUKTEN FRÅN VARUKORGEN======================
 function removeFromCart() {

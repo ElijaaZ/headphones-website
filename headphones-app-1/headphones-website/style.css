@@ -198,7 +198,6 @@ nav {
         font-size: 1rem;
     }
     .remove-btn {
-        display: flex;
         color: #fff;
         background: #E09E9E;
         font-size: 18px;
@@ -230,8 +229,8 @@ nav {
         place-items: center;
     }
     .product-img {
-        border: 1px solid black;
-        margin-top: -400px;
+        position: absolute;
+        margin-bottom: 200px;
     }
     .product-content {
         font-family: 'Poppins';
@@ -257,7 +256,7 @@ nav {
     }
     .information {
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
     }
     .payment {
         margin-top: 2rem;
