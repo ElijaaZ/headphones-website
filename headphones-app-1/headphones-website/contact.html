@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Headphones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h2 class="logo">Elias <span class="thin">Headphones</span></h2>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="images/menuicon.png" class="menu" onclick="togglemenu()">
+                <a href="">
+                    <img src="images/bag.png" class="cart-icon" onclick="openCart()">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <h1 class="contact">Contact Us</h1>
+        <p class="contact-p">We can answer all your questions, <br> if you need help with your order or anything else related to us.</p>
+    </div>
+    <div class="contact-box">
+        <div class="contact-box-1">
+            <h1>Send request</h1>
+            <form>
+                <div class="contact-group">
+                    <input class="contact-input" type="text" placeholder="NAME">
+                    <input class="contact-input" type="text" placeholder="PHONE NUMBER">
+                    <input class="contact-input" type="email" placeholder="EMAIL">
+                    <input class="contact-input" type="text" placeholder="SUBJECT">
+                </div>
+            </form>
+            <label class="message">MESSAGE</label>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="submit">Submit</button>
+        </div>
+        <div class="contact-box-2">
+            <h1>Reach us</h1>
+            <h3 class="reach">Email: eliasheadphones@hotmail.com</h3>
+            <h3 class="reach">Phone: 123456789</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
