@@ -85,26 +85,26 @@ function togglemenu(){
 // ====================ÖPPNA OCH STÄNGA VARUKORGEN======================
 
     const cartIcon = document.querySelector('.cart-icon');
-    const closeCartBtn = document.querySelector('.closecart');
+    const closeBtn = document.querySelector('.closecart');
     const cart = document.querySelector('.cart');
+
+    cartIcon.addEventListener('click', openCart);
+    closeBtn.addEventListener('click', closeCart)
 
     function openCart() {
         cart.style.display = 'block';
     }
-
     function closeCart() {
         cart.style.display = 'none';
     }
 
-    cartIcon.addEventListener("click", openCart);
-    closeCartBtn.addEventListener('click', closeCart); 
-;
 
 // ====================TA BORT PRODUKTEN FRÅN VARUKORGEN======================
 function removeFromCart() {
     const cartContent = document.querySelector(".cart-content");
     cartContent.addEventListener('click', function(event) {
-        if (event.target.classList.contains('remove-btn')) {
+        let removeBtn = event.target.classList.contains('remove-btn');
+        if (removeBtn) {
             event.target.parentElement.parentElement.remove();
         }
     });
