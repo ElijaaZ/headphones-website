@@ -13,15 +13,17 @@ const products = [
 // ====================FÖR ATT LÄGGA TILL PRODUKTEN I VARUKORGEN======================
 
 const cartList = [];
-const cartCont = document.querySelector(".cart-content");
+const cartContentOne = document.querySelector(".cart-content");
 
 function addToCart(id) {
-    const product = products.find((product) => product.id === id);
-
+    if(cartList.some((item) => item.id === id)){
+        alert("Product already in cart");
+    } else {
+        const product = products.find((product) => product.id === id);
         cartList.push(product);
 
-        const cartItem = document.createElement('div');
-        cartItem.innerHTML = `
+        const item = document.createElement('div');
+        item.innerHTML = `
             <img src="${product.imgSrc}" class="cart-img">
             <div class="detail-box">
             <div class="title-price">
@@ -31,11 +33,11 @@ function addToCart(id) {
                 <div class="quantity">
                     <button class="quantity-button" id="decrement">-</button><h6 id="quantity">01</h6><button class="quantity-button" id="increment">+</button>
                 </div>
-                <button class="remove-btn" onclick="removeFromCart(${product.id})">REMOVE</button>
+                <button class="delete-btn" onclick="deleteButton(${product.id})">DELETE</button>
             </div>
         `;
 
-        cartCont.appendChild(cartItem);
+        cartContentOne.appendChild(item);
 
         // När produkten läggs till i varukorgen ändras total summan från 0kr till 999 kr.
 
@@ -43,9 +45,9 @@ function addToCart(id) {
         total.textContent = "999 kr";
 
 // ====================ÖKA OCH MINSKA ANTALET AV PRODUKTEN SAMT TOTAL PRIS======================
-        const decrement = cartItem.querySelector("#decrement");
-        const increment = cartItem.querySelector("#increment");
-        const quantityNum = cartItem.querySelector("#quantity");
+        const decrement = item.querySelector("#decrement");
+        const increment = item.querySelector("#increment");
+        const quantityNum = item.querySelector("#quantity");
         const totalPrice = document.querySelector(".total-price");
 
         let quantity = 1;
@@ -68,6 +70,7 @@ function addToCart(id) {
             updateQuantity();
         });
 }
+    }
 // ====================FÖR ATT ÖPPNA MENYN I MOBIL LÄGE======================
 
 const menuList = document.getElementById("menuList");
@@ -82,30 +85,17 @@ function togglemenu(){
     }
 }
 
-// ====================ÖPPNA OCH STÄNGA VARUKORGEN======================
-
-    const cartIcon = document.querySelector('.cart-icon');
-    const closeBtn = document.querySelector('.closecart');
-    const cart = document.querySelector('.cart');
-
-    cartIcon.addEventListener('click', openCart);
-    closeBtn.addEventListener('click', closeCart)
-
-    function openCart() {
-        cart.style.display = 'block';
-    }
-    function closeCart() {
-        cart.style.display = 'none';
-    }
-
-
 // ====================TA BORT PRODUKTEN FRÅN VARUKORGEN======================
-function removeFromCart() {
-    const cartContent = document.querySelector(".cart-content");
-    cartContent.addEventListener('click', function(event) {
-        let removeBtn = event.target.classList.contains('remove-btn');
-        if (removeBtn) {
+function deleteButton() {
+    const cartContentTwo = document.querySelector(".cart-content");
+    cartContentTwo.addEventListener('click', function(event) {
+        let deleteBtn = event.target.classList.contains('delete-btn');
+        if (deleteBtn) {
             event.target.parentElement.parentElement.remove();
-        }
+            refreshPage();
+        }   
     });
+}
+function refreshPage() {
+    window.location.reload();
 }

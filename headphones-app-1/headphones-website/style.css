@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     overflow: hidden;
@@ -11,7 +12,6 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
 .logo {
     font-weight: bold;
@@ -27,7 +27,7 @@ nav {
 }
 .navbar ul li {
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 .navbar ul li a {
     text-decoration: none;
@@ -77,12 +77,10 @@ nav {
     font-size: 40px;
     font-weight: 100;
     margin: 5px;
-    font-family: 'Poppins', sans-serif;
 }
 .product-text h4 {
     margin: 5px;
     font-size: 28px;
-    font-family: 'Poppins', sans-serif;
 }
 .buy-button,
 .add-to-cart {
@@ -93,7 +91,6 @@ nav {
     border-radius: 6px;
     background: linear-gradient(to right, #E09E9E, #da63cc);
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 .buy-button:hover {
@@ -123,7 +120,8 @@ nav {
         left: calc(100% - 500px);
         width: 500px;
         background-color: #424774;
-        height: 91.5vh;
+        height: 90vh;
+        font-weight: bold;
     }
     .cart h1 {
         font-weight: bold;
@@ -145,22 +143,11 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: bold;
         cursor: pointer;
     }
     .cart .checkout div:nth-child(2) {
         background-color: #000;
         color: #fff;
-    }
-    .ch {
-        width: 100%;
-        height: 60px;
-        text-align: center;
-        padding: 15px;
-        border: 1px solid;
-        background-color: #E09E9E;
-        position: absolute;
-        bottom: 100px;
     }
     .ch a {
         text-decoration: none;
@@ -173,7 +160,6 @@ nav {
         margin-top: 1rem;
         margin-left: 1rem;
         color: #fff;
-        font-family: 'Poppins';
     }
     .cart-img {
         width: 30%;
@@ -187,9 +173,6 @@ nav {
     .cart-title {
         font-size: 1.5rem;
     }
-    .cart-price {
-        font-weight: bold;
-    }
     .cart-qty {
         border: 1px solid;
         width: 2.4rem;
@@ -197,13 +180,12 @@ nav {
         text-align: center;
         font-size: 1rem;
     }
-    .remove-btn {
+    .delete-btn {
         color: #fff;
         background: #E09E9E;
         font-size: 18px;
         width: 5.3rem;
         padding: 5px;
-        font-family: 'Poppins';
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -233,7 +215,6 @@ nav {
         margin-bottom: 200px;
     }
     .product-content {
-        font-family: 'Poppins';
         width: 25%;
         margin-top: 300px;
         margin-left: 100px;
@@ -249,7 +230,6 @@ nav {
     }
     /* Checkout sida börjar här */
     .check-out {
-        font-family: 'Poppins';
         display: flex;
         flex-direction: column;
         place-items: center;
@@ -280,14 +260,12 @@ nav {
     .contact-container {
         width: 80%;
         margin: 50px auto;
-        font-family: 'Poppins';
     }
     .contact-box {
         display: flex;
         width: 80%;
         border: 1px solid;
         margin: auto;
-        font-family: 'Poppins';
     }
     .contact-box-1 {
         flex-basis: 60%;
@@ -328,7 +306,7 @@ nav {
         cursor: pointer;
         color: #fff;
     }
-    .reach {
+    .contact-us {
         margin-top: 20px;
     }
 @media only screen and (max-width:500px){
@@ -348,6 +326,7 @@ nav {
         top: 50px;
         z-index: 2;
         right: 0;
+        text-align: center;
     }
     .product-text h1 {
         font-size: 30px;
@@ -379,40 +358,20 @@ nav {
     .headphones {
         width: 60%;
         margin-right: -10px;
-        margin-top: -180px;
+        margin-top: -150px;
     }
 /* Checkout sida börjar här */
     .check-out {
-        font-family: 'Poppins', sans-serif;
-    }
-    .check-out h2 {
         padding: 10px;
     }
     .information {
         gap: 10px;
         display: flex;
         flex-direction: column;
-        margin: 10px 0 0 0;
         height: 68vh;
     }
-    .information ::placeholder {
-        font-size: 16px;
-        padding: 5px;
-    }
     .information input{
-        font-size: 20px;
-        width: 260px;
         height: 40px;
         border: 2px solid #000;
-    }
-    .payment {
-        text-align: center;
-    }
-    .payment button {
-        width: 120px;
-        height: 30px;
-    }
-    .contact-box {
-        width: 100%;
     }
 }
