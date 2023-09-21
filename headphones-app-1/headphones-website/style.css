@@ -381,30 +381,6 @@ nav {
         margin-right: -10px;
         margin-top: -180px;
     }
-/* Produkt sida börjar här */
-    .product-content {
-        width: 80%;
-        margin: 10px 10px 0 10px;
-    }
-    .product-title {
-        font-size: 32px;
-    }
-    .product-img {
-        width: 60%;
-        margin-top: 500px;
-    }
-    .buy-price {
-        display: flex;
-        gap: 60px;
-    }
-    .buy-price h4 {
-        font-size: 28px;
-    }
-    .cart {
-        height: 70vh;
-        left: 0;
-        width: 100%;
-    }
 /* Checkout sida börjar här */
     .check-out {
         font-family: 'Poppins', sans-serif;
